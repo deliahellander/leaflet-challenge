@@ -1,5 +1,13 @@
 # Leaflet Homework - Visualizing Data with Leaflet
 
+- - -
+
+## Results
+
+![Map](https://github.com/deliahellander/leaflet-challenge/blob/main/Leaflet-Step-1/Images/Map.png?raw=true)
+
+Data link ("All Earthquakes" from the last 30 days): https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson
+
 ## Background
 
 ![1-Logo](Images/1-Logo.png)
