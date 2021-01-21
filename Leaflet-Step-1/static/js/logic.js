@@ -32,13 +32,13 @@ d3.json(link, function(data) {
         switch(true) {
           case depth > 90:
             return "darkred";
-          case depth > 65:
+          case depth > 70:
             return "red";
-          case depth > 45:
+          case depth > 50:
             return "orange";
-          case depth > 25:
+          case depth > 30:
             return "yellow";
-          case depth > 5:
+          case depth > 10:
             return "lime";
           default:
             return "green";
@@ -51,7 +51,7 @@ d3.json(link, function(data) {
             {
               radius: marker_size(feature.properties.mag),
               fillColor: color(feature.geometry.coordinates[2]),
-              fillOpacity: 0.7,
+              fillOpacity: 0.5,
               color: "black",
               stroke: true,
               weight: 0.5
@@ -68,7 +68,7 @@ d3.json(link, function(data) {
     var legend = L.control({position: 'bottomright'});
     legend.onAdd = function() {
         var div = L.DomUtil.create('div', 'info legend'),
-            depth = [0, 5, 25, 45, 65, 90];
+            depth = [-10, 10, 30, 50, 70, 90];
             div.innerHTML += "<h3 style='text-align: center'>Depth</h3>"
       
           // loop through our depth to get colors for earthquakes
